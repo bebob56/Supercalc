@@ -1,0 +1,65 @@
+from __future__ import division
+
+
+def adding(num1, num2):
+    total = num1 + num2
+    return total
+
+def subtracting(num1, num2):
+    difference = num1 - num2
+    return difference
+
+def multiplying(num1, num2):
+    product = num1 * num2
+    return product
+
+def devision(num1, num2):
+    quotient = num1/num2
+    return quotient
+
+
+        
+
+
+
+print("Hello Welcome to SuperCalc!! \nPlease selecting the operaytion you wan to complete:")
+print("Press 1 for Addtion \nPress 2 for Subtraction \nPress 3 for Multiplication \nPress 4 for Division")
+while True:
+
+    selection = int(input("Select your operation:"))
+    num1 = int(input("Enter your first number:"))
+    num2 = int(input("Enter your second number:"))
+
+
+    if selection == 1:
+        print(str(num1) + "+" + str(num2)  + "=" + str(adding(num1, num2)))
+        x = input("Would you like to continue: ")
+        if(x == "n"):
+            print("Thank you for using!")
+            break
+        else:
+            pass
+        
+    elif selection == 2:
+        print(subtracting(num1, num2))
+        if(x == "n"):
+            print("Thank you for using!")
+            break
+        else:
+            pass
+    elif selection == 3:
+        print(multiplying(num1, num2))
+        if(x == "n"):
+            print("Thank you for using!")
+            break
+        else:
+            pass
+    elif selection == 4:
+        print(devision(num1, num2))
+        if(x == "n"):
+            print("Thank you for using!")
+            break
+        else:
+            pass
+    else:
+        print("invalid in put try again")
